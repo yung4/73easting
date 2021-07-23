@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  
+}
+
+/*
+.left {
+  float:left;
+
+  width: 60vw;
+}
+
+.right {
+  float:left;
+
+  width: 40vw;
+}
+
+
+
+.subRight {
+  float: left; 
+
+  height: 100%;
+
+  width: 50%;
+}
+
+.subLeft {
+  float: left;
+
+  height: 100%;
+
+  width: 50%;
+}
+
+*/
+
+
+#header {
+  height: 5vh;
+}
+
+#top {
+  height: 70vh;
+}
+
+#bottom {
+  height: 30vh;
+}
+
+
+/* COMPONENTS */ 
+
+#Map {
+  background-color: lavender;
+}
+
+#Sidebar {
+  background-color: lavenderblush;
+}
+
+#Timeline {
+  background-color: gray;
+}
+
+#Information {
+  background-color: lightgray;
+}
+
+/* CANVAS */
+
+.canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#mapTitle {
+  z-index: 4;
+}
+
+#mapCanvas {
+  z-index: 1;
+}
+
+#gridCanvas {
+  z-index: 2;
+}
+
+#drawCanvas {
+  z-index: 3;
+}
+
+/* DIAL */
+
+#dial {
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+
+.dialOptions {
+  flex-grow: 1;
+}
+
+/* TITLES */
+
+h1 {
+  margin: 0px;
+}
