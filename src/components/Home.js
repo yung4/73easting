@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 
 import Map from './Map.js';
 import Sidebar from './Sidebar.js';
@@ -73,14 +73,17 @@ class Home extends Component {
 			<Container fluid>
 				<Row id="top">
 					<Col xs={8} id="Map" style={{padding: 0}}>
-						<Col id="mapTitle">
+						<Col xs={8} className="canvas" id="mapTitle">
 							<h2>current phase</h2>
 						</Col>
 						< Map height={this.state.height} width={this.state.width} updated={this.state.updated}/>
 					</Col>
 
 					<Col xs={4} id="Sidebar">
-						< Sidebar />
+						<h2>Orders</h2>
+						< Accordion defaultActiveKey="0">
+							< Sidebar />
+						</ Accordion >
 					</Col>
 				</Row>
 

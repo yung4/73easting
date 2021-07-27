@@ -58,6 +58,10 @@
 
 #Sidebar {
   background-color: lavenderblush;
+
+  overflow-y: scroll;
+
+  max-height: 70vh
 }
 
 #Timeline {
@@ -77,7 +81,7 @@
 }
 
 #mapTitle {
-  z-index: 4;
+  z-index: 5;
 }
 
 #mapCanvas {

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Container, Row, Col } from "react-bootstrap";
+
 import InfoDial from './info_components/InfoDial.js';
 import LeftColInfo from './info_components/LeftColInfo';
 import RightColInfo from './info_components/RightColInfo';
@@ -8,23 +10,23 @@ class Information extends Component {
 	
 	render() {
 		return (
-			<div className="container-fluid">
-				<div className="row">
-					<div className="col">
+			<Container fluid>
+				<Row>
+					<Col>
 						< InfoDial />
-					</div>
-				</div>
+					</Col>
+				</Row>
 
-				<div className="row">
-					<div className="col">
+				<Row>
+					<Col>
 						< LeftColInfo />
-					</div>
+					</Col>
 
-					<div className="col">
+					<Col>
 						< RightColInfo />
-					</div>
-				</div>
-			</div>
+					</Col>
+				</Row>
+			</Container>
 		)
 	}
 }

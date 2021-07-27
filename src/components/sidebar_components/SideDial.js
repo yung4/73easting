@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Row, Col } from "react-bootstrap";
+
 class SideDial extends Component {
 
     constructor() {
@@ -37,19 +39,19 @@ class SideDial extends Component {
 
 
 		return (
-			<div className="row" id="dial">
-                <div className="col-3">
+			<Row id="dial">
+                <Col xs={3}>
                     <button onClick={this.selectPrev}>{this.state.headings[this.prev()]}</button>
-                </div>
+                </Col>
 
-                <div className="col-6">
+                <Col xs={6}>
 				    <h3>{this.state.headings[this.state.counter]}</h3>
-                </div>
+                </Col>
 
-                <div className="col-3">
+                <Col xs={3}>
                     <button onClick={this.selectNext}>{this.state.headings[this.next()]}</button>
-                </div>
-			</div>
+                </Col>
+			</Row>
 		)
 	}
 }
