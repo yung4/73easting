@@ -58,7 +58,7 @@ class SideCard extends Component {
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
-        )
+        );
     }
 
     intent = () => {
@@ -72,7 +72,7 @@ class SideCard extends Component {
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
-        )
+        );
     }
 
     concepts = () => {
@@ -86,7 +86,7 @@ class SideCard extends Component {
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
-        )
+        );
     }
 
     objectives = () => {
@@ -100,7 +100,7 @@ class SideCard extends Component {
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
-        )
+        );
     }
 
     decisions = () => {
@@ -114,7 +114,22 @@ class SideCard extends Component {
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
-        )
+        );
+    }
+
+    default = () => {
+        return (
+            <Card.Body>
+                <Card.Title>hahahahahahshdhahdahahahaha</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+                </Card.Text>
+                <Card.Link href="#">Card Link</Card.Link>
+                <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+        );
     }
 
 
@@ -122,7 +137,7 @@ class SideCard extends Component {
 	render() {
         switch (this.props.index) {
             case 0:
-                return ("fuck");
+                return ( < this.default /> );
             case 1:
                 return ( < this.terrainAndWeather /> );
             case 2:
@@ -140,18 +155,7 @@ class SideCard extends Component {
             case 8:
                 return ( < this.decisions /> );
             default:
-                return (
-                    <Card.Body>
-                        <Card.Title>hahahahahahshdhahdahahahaha</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                        </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
-                    </Card.Body>
-                );
+                return ( < this.default /> );
         }
 	}
 }
