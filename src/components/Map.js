@@ -23,7 +23,7 @@ class Map extends Component {
 		var c = document.getElementById("mapCanvas");
 		var ctx = c.getContext("2d");
 
-		console.log(this.map);
+		//console.log(this.map);
 
 		var image = new Image();
 	
@@ -192,15 +192,15 @@ class Map extends Component {
 	}
 
 	componentDidUpdate(prevProps) {
-		console.log("map updated");
-		console.log("height: " + this.props.height);
-		console.log("width: " + this.props.width);
+		//console.log("map updated");
+		//console.log("height: " + this.props.height);
+		//console.log("width: " + this.props.width);
 
 		if (this.props !== prevProps) {
 			this.setState({x: 0});
 			this.setState({y: 0});
 
-			console.log("unequal")
+			//console.log("unequal")
 			this.animate = false;
 		}
 

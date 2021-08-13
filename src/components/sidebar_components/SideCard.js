@@ -3,15 +3,20 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 
 class SideCard extends Component {
+    openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) {
+            newWindow.opener = null
+        }
+    }
 
     terrainAndWeather = () => {
         return (
             <Card.Body>
-                <Card.Title>terrainandWEathero</Card.Title>
+                <Card.Title>terrain and weather</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content. hheheheh ahahahah hdahdhadha fuck help
+                terrain and weather
                 </Card.Text>
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
@@ -117,6 +122,20 @@ class SideCard extends Component {
         )
     }
 
+    about = () => {
+        return (
+            <Card.Body>
+                <Card.Title>about</Card.Title>
+                <Card.Text>
+                By Dr. Soren Matei, Capt. Bradford Witt, and Christopher Yung
+                </Card.Text>
+                <Card.Link onClick={() => this.openInNewTab("https://github.com/yung4/73easting")}>Git Repo</Card.Link>
+                <Card.Link href="#">Settings</Card.Link>
+                <input type="file" id="file-selector" ></input>
+            </Card.Body>
+        )
+    }
+
 
 	
 	render() {
@@ -139,14 +158,15 @@ class SideCard extends Component {
                 return ( < this.objectives /> );
             case 8:
                 return ( < this.decisions /> );
+            case 9:
+                return ( < this.about /> );
             default:
                 return (
                     <Card.Body>
-                        <Card.Title>hahahahahahshdhahdahahahaha</Card.Title>
+                        <Card.Title>Card Title</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        If this appears, then something is wrong.
                         </Card.Text>
                         <Card.Link href="#">Card Link</Card.Link>
                         <Card.Link href="#">Another Link</Card.Link>

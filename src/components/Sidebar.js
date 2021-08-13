@@ -16,7 +16,7 @@ class Sidebar extends Component {
 
 		this.state = {
 			headings: ["Terrain and Weather", "Enemy Analysis", "Friendly Units", "Mission", 
-						"Intent/Higher HQ", "Concepts of Operation", "Objectives", "Decision Points", "pee pee poo poo"]
+						"Intent/Higher HQ", "Concepts of Operation", "Objectives", "Decision Points", "About"]
 		};
 	}
 	

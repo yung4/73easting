@@ -7,7 +7,6 @@ import SideCard from "./SideCard.js";
 class AccordionItem extends Component {
 	
 	render() {
-        console.log(this.props);
 		return (
 			<Card>
                 <Accordion.Toggle as={Card.Header} eventKey={this.props.index}>

@@ -7,6 +7,8 @@ import Sidebar from './Sidebar.js';
 import Timeline from './Timeline.js';
 import Information from './Information.js';
 
+import { readFile } from "../api/readFile.js";
+
 class Home extends Component {
 	constructor() {
 		super();
@@ -42,11 +44,15 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
+
 		window.addEventListener('resize', this.getCanvasDimensions);
 		this.getCanvasDimensions();
 
 		window.removeEventListener('resize', this.getClientDimensions);
 		this.getClientDimensions();
+
+		const file = "./Database.xlsx";
+		readFile(file);
 	}
 
 	componentWillUnmount() {
@@ -60,11 +66,13 @@ class Home extends Component {
 		//this.getCanvasDimensions();
 		//console.log("updated: " + prevState);
 
+		/*
 		if (this.state !== prevState) {
 			console.log("state change");
 			console.log(this.state);
 			console.log(prevState);
 		}
+		*/
 
 	}
 	
