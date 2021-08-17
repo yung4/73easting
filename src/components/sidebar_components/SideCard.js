@@ -58,7 +58,7 @@ class SideCard extends Component {
                 <Card.Title>mishon</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
                 <Card.Text>
-                kill bad guy
+                The mission of the VII Corps was "to attack, on order, the Iraqi defenses and destroy the Republican Guards Forces Command (RGFC) in zone"
                 </Card.Text>
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
@@ -114,7 +114,7 @@ class SideCard extends Component {
                 <Card.Title>decisions</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
                 <Card.Text>
-                red pill or blue pill
+                yes or yes
                 </Card.Text>
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
@@ -146,7 +146,6 @@ class SideCard extends Component {
                 </Card.Text>
                 <Card.Link onClick={() => this.openInNewTab("https://github.com/yung4/73easting")}>Git Repo</Card.Link>
                 <Card.Link href="#">Settings</Card.Link>
-                <input type="file" id="file-selector" ></input>
             </Card.Body>
         )
     }
@@ -176,21 +175,7 @@ class SideCard extends Component {
             case 9:
                 return ( < this.about /> );
             default:
-<<<<<<< HEAD
-                return (
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                        If this appears, then something is wrong.
-                        </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
-                    </Card.Body>
-                );
-=======
                 return ( < this.default /> );
->>>>>>> 9ec735a4438ab5af0c9b18da4a519cfd3e80cf7c
         }
 	}
 }

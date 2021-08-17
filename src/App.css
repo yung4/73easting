@@ -3,39 +3,6 @@
   
 }
 
-/*
-.left {
-  float:left;
-
-  width: 60vw;
-}
-
-.right {
-  float:left;
-
-  width: 40vw;
-}
-
-
-
-.subRight {
-  float: left; 
-
-  height: 100%;
-
-  width: 50%;
-}
-
-.subLeft {
-  float: left;
-
-  height: 100%;
-
-  width: 50%;
-}
-
-*/
-
 
 #header {
   height: 5vh;
@@ -54,6 +21,8 @@
 
 #Map {
   background-color: lavender;
+
+  z-index: 3;
 }
 
 #Sidebar {
@@ -96,6 +65,15 @@
   z-index: 3;
 }
 
+#mapControl {
+  top: -50;
+  z-index: 5;
+}
+
+#mapLeaflet {
+  z-index: 1;
+}
+
 /* DIAL */
 
 #dial {
@@ -112,4 +90,11 @@
 
 h1 {
   margin: 0px;
+}
+
+/* LEAFLET */
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
 }

@@ -5,11 +5,6 @@ import React, { Component } from "react";
 import AccordionItem from "./sidebar_components/AccordionItem.js";
 //import SideCard from "./sidebar_components/SideCard.js";
 
-/*
-return this.props.topArtists.map((artist) => (
-			< TopArtistItem key={artist.id} artist={artist} />
-		));
-		*/
 class Sidebar extends Component {
 	constructor() {
 		super();
