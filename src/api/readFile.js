@@ -1,10 +1,35 @@
 import * as xlsx from "xlsx";
 
-/*
-function readFile(file) {
-    console.log(fileToJSON(file));
+
+function parseData(data) {
+    //country = column b
+    //corp = column c
+    //division = column d
+    //brigade = column e
+    //battalion = column f
+    //unit type = column h
+    //unit code = column i
+
+    //date = column t
+    //latitude = column v
+    //longitude = column w
+
+    //var unitArr = [];
+
+    var count = 3; //first two rows are titles
+    var index;
+
+    console.log(data["B11"]);
+
+    for (var i = 0; i < 10; i++) {
+        //get country
+        index = "B" + count;
+        console.log("index: " + index);
+        console.log(data[index]);
+
+        count++;
+    }
 }
-*/
 
 function readFile(file) {
     var oReq = new XMLHttpRequest();
@@ -37,7 +62,9 @@ function readFile(file) {
 
         data = xlsx.utils.sheet_to_json(ws, {raw: true});
 
-        console.log(ws);
+        //console.log(ws);
+
+        //parseData(ws);
 
         sheet = ws;
     }

@@ -116,6 +116,9 @@ class SideCard extends Component {
                 <Card.Text>
                 yes or yes
                 </Card.Text>
+                <Card.Text>
+                no or no
+                </Card.Text>
                 <Card.Link href="#">Card Link</Card.Link>
                 <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>

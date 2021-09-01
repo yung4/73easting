@@ -55,21 +55,21 @@ class Home extends Component {
 	}
 
 	animate = () => {
-		console.log("playing: " + this.state.playing);
+		//console.log("playing: " + this.state.playing);
 
 		if (!this.state.playing) {
-			console.log("DEAD")
+			//console.log("DEAD")
 			return;
 		}
 
 		if (this.state.t === this.state.max) {
-			console.log("MAX");
+			//console.log("MAX");
 			this.setState({playing: false});
 			return;
 		}
 		
 		//increment t every 5 sec
-		console.log("play: " + this.state.t);
+		//console.log("play: " + this.state.t);
 		this.next();
 
 		setTimeout(() => { 
