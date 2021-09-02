@@ -2,7 +2,7 @@
   "name": "73easting",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yung4.github.io/73Easting/",
+  "homepage": "https://yung4.github.io/73easting/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
