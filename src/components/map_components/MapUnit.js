@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import tankImg from "../../img/tank.png";
 
 import * as L from "leaflet";
 import ReactLeafletDriftMarker  from "react-leaflet-drift-marker";
@@ -42,13 +43,15 @@ class MapUnit extends Component {
 	}
 	
 	render() {
+
 		var tank = new L.Icon({
-			iconUrl: "./tank.png",
+			iconUrl: tankImg,
 			shadowUrl:'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-			iconSize: [25, 41],
-			iconAnchor: [12, 41],
-			popupAnchor: [1, -34],
-			shadowSize: [41, 41]
+			iconSize: [40, 40],
+			iconAnchor: [10, -10],
+			popupAnchor: [1, -30],
+			shadowSize: [50, 50],
+			shadowAnchor: [0, 0]
 		})
 
 		return (

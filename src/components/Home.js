@@ -122,7 +122,7 @@ class Home extends Component {
 		//this.getClientDimensions();
 
 		const file = "./Database.xlsx";
-		readFile(file);
+		//readFile(file);
 	}
 
 	componentWillUnmount() {
